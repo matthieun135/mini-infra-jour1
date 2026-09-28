@@ -1,0 +1,16 @@
+resources:
+  - type: server
+    name: web-01
+    cpu: 2
+    memory_gb: 4
+  - type: firewall_rule
+    name: allow-https
+    port: 443
+    protocol: tcp
+  - type: database
+    name: app-db
+    engine: postgres
+  - type: server
+    name: web-02
+    cpu: 2
+    memory_gb: 4
